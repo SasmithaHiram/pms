@@ -21,15 +21,15 @@ public class Patient {
     private String name;
 
     @NotNull
-    @Email
-    @Column(unique = true)
-    private String email;
+    private LocalDate dateOfBirth;
 
     @NotNull
     private String address;
 
     @NotNull
-    private LocalDate dateOfBirth;
+    @Email
+    @Column(unique = true)
+    private String email;
 
     @NotNull
     private LocalDate registered_date;
