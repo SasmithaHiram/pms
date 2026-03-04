@@ -1,6 +1,7 @@
 package com.p.patientservice.service;
 
 import com.p.patientservice.dto.PatientResponseDTO;
+import com.p.patientservice.mapper.PatientMapper;
 import com.p.patientservice.model.Patient;
 import com.p.patientservice.repository.PatientRepository;
 import lombok.RequiredArgsConstructor;
@@ -13,14 +14,11 @@ import java.util.List;
 public class PatientService {
     private final PatientRepository patientRepository;
 
-//    public PatientService(PatientRepository patientRepository) {
-//        this.patientRepository = patientRepository;
-//    }
-
     public List<PatientResponseDTO> getPatients() {
         List<Patient> patients = patientRepository.findAll();
 
+        return patients.stream()
+                .map(PatientMapper::toDTO).toList();
     }
-
 
 }
