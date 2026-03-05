@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ab8f2e7-9a42-4ddb-8a64-6465c997fac4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/api-requests/update-patient.http" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/p/patientservice/dto/validators/CreatePatientValidationGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-requests/delete-patient.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/p/patientservice/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/p/patientservice/controller/PatientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/p/patientservice/dto/PatientRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/p/patientservice/dto/PatientRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/p/patientservice/repository/PatientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/p/patientservice/repository/PatientRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/p/patientservice/service/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/p/patientservice/service/PatientService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +27,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="HTTP Request" />
         <option value="Interface" />
+        <option value="HTTP Request" />
       </list>
     </option>
   </component>
@@ -52,6 +53,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "HTTP Request.create-patient | POST request to create patient.executor": "Run",
+    "HTTP Request.delete-patient | DELETE request to delete patient.executor": "Run",
     "HTTP Request.get-patients | GET request to get all patients.executor": "Run",
     "HTTP Request.update-patient | PUT request to update patient.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
@@ -92,6 +94,7 @@
           <value>
             <map>
               <entry key="create-patient | POST request to create patient" value="STOPPED" />
+              <entry key="delete-patient | DELETE request to delete patient" value="STOPPED" />
               <entry key="get-patients | GET request to get all patients" value="STOPPED" />
               <entry key="update-patient | PUT request to update patient" value="STOPPED" />
             </map>
@@ -123,6 +126,9 @@
     <configuration name="create-patient | POST request to create patient" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/create-patient.http" executionIdentifier="POST request to create patient" runType="Run single request">
       <method v="2" />
     </configuration>
+    <configuration name="delete-patient | DELETE request to delete patient" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/delete-patient.http" executionIdentifier="DELETE request to delete patient" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="get-patients | GET request to get all patients" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-requests/get-patients.http" executionIdentifier="GET request to get all patients" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -139,6 +145,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.delete-patient | DELETE request to delete patient" />
         <item itemvalue="HTTP Request.update-patient | PUT request to update patient" />
         <item itemvalue="HTTP Request.create-patient | POST request to create patient" />
         <item itemvalue="HTTP Request.get-patients | GET request to get all patients" />
@@ -163,7 +170,7 @@
       <workItem from="1772621674425" duration="106000" />
       <workItem from="1772621796428" duration="41000" />
       <workItem from="1772621880505" duration="2388000" />
-      <workItem from="1772688258614" duration="6167000" />
+      <workItem from="1772688258614" duration="8441000" />
     </task>
     <servers />
   </component>

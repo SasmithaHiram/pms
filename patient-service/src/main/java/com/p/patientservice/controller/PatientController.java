@@ -4,6 +4,8 @@ import com.p.patientservice.dto.PatientRequestDTO;
 import com.p.patientservice.dto.PatientResponseDTO;
 import com.p.patientservice.dto.validators.CreatePatientValidationGroup;
 import com.p.patientservice.service.PatientService;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import jakarta.validation.groups.Default;
 import lombok.RequiredArgsConstructor;
@@ -16,11 +18,13 @@ import java.util.UUID;
 
 @RestController
 @RequestMapping("/patients")
+@Tag(name = "Patient", description = "API for managing patients")
 @RequiredArgsConstructor
 public class PatientController {
     private final PatientService patientService;
 
     @GetMapping
+    @Operation(summary = "Get Patients")
     public ResponseEntity<List<PatientResponseDTO>> getPatients() {
         List<PatientResponseDTO> patients = patientService.getPatients();
         return ResponseEntity.ok(patients);
@@ -40,5 +44,11 @@ public class PatientController {
                 patientRequestDTO);
 
         return ResponseEntity.ok().body(patientResponseDTO);
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> deletePatient(@PathVariable UUID id) {
+        patientService.deletePatient(id);
+        return ResponseEntity.noContent().build();
     }
 }
